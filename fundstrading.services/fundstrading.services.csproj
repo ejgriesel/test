@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fundstrading.domain\fundstrading.domain.csproj" />
+    <ProjectReference Include="..\fundstrading.repositories\fundstrading.repositories.csproj" />
+  </ItemGroup>
+
+</Project>

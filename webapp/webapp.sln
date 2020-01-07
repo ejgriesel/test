@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapp.app", "webapp.app\webapp.app.csproj", "{BCA64CDB-C1C8-40F5-A581-55927B1DFA4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapp.app", "webapp.app\webapp.app.csproj", "{BCA64CDB-C1C8-40F5-A581-55927B1DFA4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{0C60879C-3EF7-40AD-B30B-5ACD9078F475}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "fundstrading.data", "..\fundstrading.data\fundstrading.data.sqlproj", "{C215CB33-58FC-4E11-9893-8867915B971C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2062CCA6-770B-448F-95DA-A7D48565C734}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.domain.tests", "..\fundstrading.domain.tests\fundstrading.domain.tests.csproj", "{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.repositories.tests", "..\fundstrading.repositories.tests\fundstrading.repositories.tests.csproj", "{2F97C3F2-8E88-4B9B-A383-B40189FEEC26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.services.tests", "..\fundstrading.services.tests\fundstrading.services.tests.csproj", "{56E153D5-76BE-4045-9E28-C73C479110C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.common", "..\fundstrading.common\fundstrading.common.csproj", "{793A9695-E20A-4BD7-9757-0C2C1C19CC1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.domain", "..\fundstrading.domain\fundstrading.domain.csproj", "{9B660118-0F0B-495F-AF37-8F4872F37B01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.repositories", "..\fundstrading.repositories\fundstrading.repositories.csproj", "{3F6F277A-B5E5-40E8-B06D-B624215C8100}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fundstrading.services", "..\fundstrading.services\fundstrading.services.csproj", "{D8FDC54F-C33F-4049-B9DA-D81893D011E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +35,49 @@ Global
 		{BCA64CDB-C1C8-40F5-A581-55927B1DFA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA64CDB-C1C8-40F5-A581-55927B1DFA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA64CDB-C1C8-40F5-A581-55927B1DFA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C215CB33-58FC-4E11-9893-8867915B971C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F97C3F2-8E88-4B9B-A383-B40189FEEC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F97C3F2-8E88-4B9B-A383-B40189FEEC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F97C3F2-8E88-4B9B-A383-B40189FEEC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F97C3F2-8E88-4B9B-A383-B40189FEEC26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E153D5-76BE-4045-9E28-C73C479110C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E153D5-76BE-4045-9E28-C73C479110C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E153D5-76BE-4045-9E28-C73C479110C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E153D5-76BE-4045-9E28-C73C479110C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793A9695-E20A-4BD7-9757-0C2C1C19CC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793A9695-E20A-4BD7-9757-0C2C1C19CC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793A9695-E20A-4BD7-9757-0C2C1C19CC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793A9695-E20A-4BD7-9757-0C2C1C19CC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B660118-0F0B-495F-AF37-8F4872F37B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B660118-0F0B-495F-AF37-8F4872F37B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B660118-0F0B-495F-AF37-8F4872F37B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B660118-0F0B-495F-AF37-8F4872F37B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6F277A-B5E5-40E8-B06D-B624215C8100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6F277A-B5E5-40E8-B06D-B624215C8100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6F277A-B5E5-40E8-B06D-B624215C8100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6F277A-B5E5-40E8-B06D-B624215C8100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FDC54F-C33F-4049-B9DA-D81893D011E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FDC54F-C33F-4049-B9DA-D81893D011E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FDC54F-C33F-4049-B9DA-D81893D011E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FDC54F-C33F-4049-B9DA-D81893D011E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C215CB33-58FC-4E11-9893-8867915B971C} = {0C60879C-3EF7-40AD-B30B-5ACD9078F475}
+		{CCDC0987-D42E-4EDC-A2FC-5AB2BE790B6D} = {2062CCA6-770B-448F-95DA-A7D48565C734}
+		{2F97C3F2-8E88-4B9B-A383-B40189FEEC26} = {2062CCA6-770B-448F-95DA-A7D48565C734}
+		{56E153D5-76BE-4045-9E28-C73C479110C1} = {2062CCA6-770B-448F-95DA-A7D48565C734}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E478E457-C712-4088-85DC-23010895F3BC}
